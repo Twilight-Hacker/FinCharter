@@ -1,0 +1,77 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#0099cc"
+    android:id="@+id/Master_Layout"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    tools:context="com.galadar.fincharter.ChartActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <com.galadar.fincharter.ChartSurface
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/dummy_content"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:id="@+id/surfaceView" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/swit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_margin="10dp"
+        android:background="@color/blue"
+        android:clickable="true"
+        android:elevation="15dp"
+        android:padding="10dp"
+        android:src="@drawable/candle"
+        app:elevation="15dp"
+        app:fabSize="mini"
+        app:layout_anchor="@id/surfaceView"
+        app:layout_anchorGravity="top|right|end"
+        app:useCompatPadding="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_margin="10dp"
+        android:background="@color/blue"
+        android:clickable="true"
+        android:elevation="15dp"
+        android:padding="10dp"
+        android:src="@android:drawable/ic_menu_save"
+        app:elevation="15dp"
+        app:fabSize="mini"
+        app:layout_anchor="@id/swit"
+        app:layout_anchorGravity="left|start"
+        app:useCompatPadding="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/draw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_margin="10dp"
+        android:background="@color/blue"
+        android:clickable="true"
+        android:elevation="15dp"
+        android:padding="30dp"
+        android:src="@drawable/draw"
+        app:elevation="15dp"
+        app:fabSize="mini"
+        app:layout_anchor="@id/save"
+        app:layout_anchorGravity="left|start"
+        app:useCompatPadding="true" />
+
+</android.support.design.widget.CoordinatorLayout>

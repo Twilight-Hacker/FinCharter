@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.galadar.fincharter.ShareList">
+
+    <item
+        android:id="@+id/Settings"
+        android:orderInCategory="200"
+        android:title="@string/settings"
+        app:showAsAction="always"/>
+</menu>
